@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  
+  background-color: #00a;
+  color: #fff;
+  font-family: monospace;
+  font-size: 25px;
+  line-height: 1.7rem;
+  font-weight: 300;
 }
-
