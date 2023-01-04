@@ -1,0 +1,26 @@
+nav {
+    padding: 0 4em;
+    display: block;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+li.hover {
+    background-color: #aaa;
+    color: #00a;
+    border-bottom: 1px solid #aaa;
+}
