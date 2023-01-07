@@ -1,9 +1,9 @@
-nav {
-    padding: 0 4em;
+.nav {
+    padding: 0 2em;
     display: block;
 }
 
-ul {
+.nav ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -19,8 +19,7 @@ li {
     margin-right: 1.5rem;
 }
 
-li.hover {
-    background-color: #aaa;
-    color: #00a;
-    border-bottom: 1px solid #aaa;
+.nav a {
+    text-decoration: none;
+    color: #fff;
 }
