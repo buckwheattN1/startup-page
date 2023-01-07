@@ -1,12 +1,21 @@
 import React from "react";
 
+import Quotations from "../../Quotations";
 import classes from "./Header.module.css";
 import Navigation from "../Navigation";
 
 function Header() {
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  const randInt = getRandomInt(Quotations.length);
+
   return (
     <div>
-      <header>LOOKS LIKE BIOS DOESN'T IT ?</header>
+      <header className={classes.header}>
+        "{Quotations[randInt].qoute}" - {Quotations[randInt].author}
+      </header>
       <Navigation />
     </div>
   );
