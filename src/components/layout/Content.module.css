@@ -1,0 +1,10 @@
+.main {
+    background-color: #aaa;
+    padding: 1rem;
+}
+
+.content {
+    height: calc(100% - 2rem);
+    border: 0.2rem solid #00a;
+    padding: 1rem;
+}
