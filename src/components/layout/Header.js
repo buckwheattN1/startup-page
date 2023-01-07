@@ -14,7 +14,8 @@ function Header() {
   return (
     <div>
       <header className={classes.header}>
-        "{Quotations[randInt].qoute}" - {Quotations[randInt].author}
+        "{Quotations[randInt].qoute.toUpperCase()}" -{" "}
+        {Quotations[randInt].author}
       </header>
       <Navigation />
     </div>
