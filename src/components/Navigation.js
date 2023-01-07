@@ -8,6 +8,8 @@ function Navigation() {
       <ul>
         <li>MAIN</li>
         <li>SEARCH</li>
+        <li>WORK</li>
+        <li>FUN</li>
       </ul>
     </nav>
   );
