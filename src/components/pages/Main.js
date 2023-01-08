@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Weather from "../Weather";
 
-function MainPage() {
+function DateTime() {
   // Set time and refresh it every second
   const [currentTime, setCurrentTime] = useState(
     new Date().toLocaleTimeString("pl-PL", { hour12: false })
@@ -29,6 +30,15 @@ function MainPage() {
         System Time
         <time style={{ margin: "4rem" }}>[{currentTime}]</time>
       </a>
+    </div>
+  );
+}
+
+function MainPage() {
+  return (
+    <div>
+      <DateTime />
+      <Weather />
     </div>
   );
 }
