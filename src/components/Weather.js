@@ -1,21 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-function Weather() {
+const Weather = () => {
   const api =
     "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/warsaw?unitGroup=metric&key=PKEKTDB4B4TMDVWFU85J7SXSW&contentType=json";
+  const [weatherInfo, setWeatherInfo] = useState([]);
 
-  //   useEffect(() => {
-  //     fetchWeather();
-  //   }, []);
+  const fetchData = async () => {
+    const response = await fetch(api);
+    const data = await response.json();
+    setWeatherInfo(data);
+  };
 
-  //   // Fetch Weather
-  //   const fetchWeather = async () => {
-  //     const res = await fetch(api);
-  //     const data = await res.json();
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  //     console.log(data.address);
-  //   };
-  //   return <div>{data.address}</div>;
-}
+  return (
+    <div>
+      {weatherInfo.address}
+      <h1>Now is {weatherInfo.days[0].temp}&#8451;</h1>
+    </div>
+  );
+};
 
 export default Weather;
