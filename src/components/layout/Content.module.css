@@ -1,10 +1,30 @@
 .main {
     background-color: #aaa;
+    grid-row: 3/span 1;
+    background-color: #aaa;
+    -ms-grid-columns: 70% 30%;
+    grid-template-columns: 70% 30%;
+    -ms-grid-rows: 100%;
+    grid-template-rows: 100%;
     padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    height: 75vh;
 }
 
 .content {
+    grid-row: 1/span 1;
     height: calc(100% - 2rem);
-    border: 0.2rem solid #00a;
+    border: 0.3rem solid #00a;
     padding: 1rem;
+}
+
+.description {
+    grid-row: 1/span 1;
+    height: calc(100% - 2rem);
+    border: 0.3rem solid #00a;
+    border-left: none;
+    padding: 1rem;
+
+
 }

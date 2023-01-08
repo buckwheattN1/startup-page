@@ -15,6 +15,7 @@ function Content() {
           <Route path="/search" element={<SearchPage />} />
         </Routes>
       </section>
+      <section className={classes.description}>INFORMATION</section>
     </main>
   );
 }
